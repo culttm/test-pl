@@ -4,16 +4,9 @@ test('cart', async ({ page }) => {
 
   await page.goto('https://hillary.ua/kremy-dlya-litsa/sontsezakhysnyi-bb-krem-dlia-oblychchia-spf30-nude-hillary-vitasun-tone-up-bb-cream-all-day-protect-spf30-40-ml/')
 
-  await page.evaluate(() => {
-    // const script = document.createElement('script');
-    // script.src = './lol.js';
-    // document.head.appendChild(script);
+  await page.addScriptTag({url: 'https://cdn.jsdelivr.net/gh/culttm/test-pl@master/tests/lol.js'});
 
-    window["customFN"] = function() {
-      return "customFN";
-    }
-
-
+  await page.evaluate(async () => {
     return window["customFN"]()
   })
 
