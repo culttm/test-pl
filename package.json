@@ -1,0 +1,14 @@
+{
+  "name": "test-pl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Dmitry Kozlov",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.0.2"
+  }
+}
